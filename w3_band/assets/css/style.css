@@ -22,37 +22,49 @@ html {
     list-style: none;
 }
 
-#nav li {
+#nav>li{
     display: inline-block;
+}
+
+#nav li{
     position: relative;
-    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display: block;
 }
 
 #nav > li:hover > a,
 #nav .subnav li:hover > a {
     color: #000;
     background-color: #ccc;
+    display: block;
 }
 
-#nav li a {
-    text-decoration: none;
+#nav > li > a {
     color: #fff;
+    text-decoration: none;
     line-height: 46px;
     display: inline-block;
     padding: 0 24px;
+    text-transform: uppercase;
 }
 
-#nav .subnav   {
+#nav .subnav {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #fff;
-    box-shadow: 0 0 rgba(0,0,0, 0.3);
+    box-shadow: 0 0 10px rgba(0,0,0, 0.4);
+    min-width: 160px;
+    line-height: 38px;
 }
 
 #nav .subnav a {
     color: #000;
-    padding: 0 16px;
+    padding:0 16px;
+    text-decoration: none;
 }
 
 
