@@ -18,12 +18,18 @@ html {
     background-color: #000;
 }
 
-#nav li {
-    display: inline-block;
-
+#nav, .subnav {
+    list-style: none;
 }
 
-#nav li:hover a {
+#nav li {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover > a {
     color: #000;
     background-color: #ccc;
 }
@@ -36,9 +42,19 @@ html {
     padding: 0 24px;
 }
 
-#nav .subnav  {
-    display: none;
+#nav .subnav   {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 rgba(0,0,0, 0.3);
 }
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 16px;
+}
+
 
 #slider {
 
@@ -51,4 +67,3 @@ html {
 #footer {
 
 }
-
