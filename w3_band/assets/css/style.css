@@ -6,9 +6,9 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
-
 #main {
 
 }
@@ -19,6 +19,62 @@ html {
 
 .text-white {
     color:#fff !important;
+}
+
+.text-center {
+    text-align: center  !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.btn{
+    color: #fff;
+    background-color:#000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
 }
 
 #header {
@@ -74,6 +130,10 @@ html {
     color: #000;
     background-color: #ccc;
     display: block;
+}
+
+#nav > li:hover i {
+    color: #000;
 }
 
 #nav > li > a {
@@ -139,7 +199,7 @@ html {
     width: 800px;
     margin-left:auto;
     margin-right: auto;
-    padding: 64px 16px;
+    padding: 64px 0px 112px;
 }
 
 #content .content-heading{
@@ -167,12 +227,6 @@ html {
 #content .member {
     padding: 32px 0;
     overflow: hidden;
-}
-
-#content .member-item {
-    float: left;
-    width: 33.33333%;
-    text-align: center;
 }
 
 #content .Name {
@@ -220,6 +274,107 @@ html {
     margin-top: -3px;
 }
 
-#footer {
+.place-list{
+    margin-top: 32px;
+}
 
+.place1-img{
+    width: 100%;
+    display: block;
+}
+
+.place1-img:hover {
+    opacity: 0.6;
+}
+
+.place-content{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.place-time{
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+
+
+.place-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    display: inline-block;
+    width: 30px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
+    border-style: none;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social {
+    font-size: 24px;
+
+}
+
+.social a {
+    color: rgba(0,0,0, 0.6);
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: rgba(0,0,0, 0.4);
+}
+
+.copyright {
+    margin-top: 15px;
+    color: rgba(0,0,0, 0.6);
+    font-size: 15px;
+}
+
+.copyright a {
+    color: rgba(0,0,0, 0.6);
 }
